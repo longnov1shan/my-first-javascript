@@ -1,0 +1,27 @@
+<html>
+<head>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+	<%- include('nav.ejs'); %>
+<h1> Contact ALEXANDER GYUROV   </h1>
+<p> 89060339919</p>
+<p> <%= qs.dept %></p>
+
+<form id ="contact-form" method="POST" action="/contact">
+<label for ="who"> <ul>  who do you want to contact? </ul> </label> 
+<input type = "text" name = "who" value = "<%= qs.person %>" >
+<label for ="department"> <ul> which department you want to contact? </ul></label>
+<input type = "text" name = "department" value = "<%= qs.dept %>" > 
+<label for ="email"> <ul> whats your email? </ul> </label>
+<input type = "text" name = "email">
+<ul> <input type = "submit" name = "submit"></ul>
+</form>
+
+
+
+	</body>
+
+</html>
