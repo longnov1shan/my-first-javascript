@@ -12,7 +12,7 @@ var bodyParser = require('body-parser')
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
  app.set('view engine', 'ejs');
-app.use('/assets',express.static('assets'));
+app.use('/my-first-javascript',express.static('my-first-javascript'));
 
 app.get('/',function (req,res){
 
